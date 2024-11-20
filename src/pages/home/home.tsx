@@ -13,7 +13,7 @@ const Home = () => {
     toast.success('Successfully copied to clipboard');
     setTimeout(() => setCopiedStates((prev) => ({...prev, [code]: false})), 2000); // Reset after 2 seconds
   }).catch((err) => {
-    console.err({msg: 'Failed to copy', err})
+    console.error({msg: 'Failed to copy', err})
     toast.error("Failed to copy code! Please try again later.")
   });
 
