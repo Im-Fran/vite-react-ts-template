@@ -18,10 +18,9 @@ const Home = () => {
   });
 
   const steps = [
-    { label: "1. Clone the repository", code: "git clone https://github.com/Im-Fran/vite-react-ts-template.git" },
-    { label: "2. Navigate to the project directory", code: "cd vite-react-ts-template" },
-    { label: "3. Install dependencies", code: "bun install" },
-    { label: "4. Start the development server", code: "bun run dev" }
+    { label: "1. Create the project", code: "bun create Im-Fran/vite-react-ts-template <name>" },
+    { label: "2. Navigate to the project directory", code: "cd <name>" },
+    { label: "3. Start the development server", code: "bun dev" }
   ];
 
   return <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
